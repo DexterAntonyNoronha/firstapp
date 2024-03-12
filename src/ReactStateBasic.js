@@ -1,26 +1,31 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export function ReactStateBasic() {
-    const [value, setValue] = useState(0); 
-    const [anotherValue, setAnotherValue] = useState(2);
+    const [click, setClick] = useState([]);
 
-    const handleClick = () => {
-        
-        setValue(value + 1);
-        console.log("I am clicked again => ", value);
-    }
+    const addNumber = () => {
+        setClick([
+            ...click,
+            {
+                id: click.length,
+                value: Math.floor(Math.random() * 100)
+            }
+        ]);
+    };
 
     return (
-        <>
-            <div className="btn btn-sm btn-success " onClick={
-                //() =>  console.log("I am clicked")
-                handleClick
-            }>Increment</div>
-            <span className="alert alert-info">Value is : {value} and {anotherValue}</span>
-
-            <div className="btn btn-sm btn-success " onClick={
-                () => setAnotherValue(anotherValue + 2)
-            }>Show Increment</div>
-        </>
+        <div>
+            <ul>
+                {click.map(item => (
+                    <div class="input-group">
+                        <label className="input-group-text">{item.id}</label>
+                        <input className="form-control" type="text" key={item.id} value={item.value}></input>
+                    </div>
+                ))}
+            </ul>
+            <button onClick={addNumber}>
+                Click me
+            </button>
+        </div>
     );
-}
+} 

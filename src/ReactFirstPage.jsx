@@ -19,7 +19,7 @@ export function FirstPage() {
 
     return (
         <>
-            {numbers.map((x => <h2 key={x}>{x}</h2>))}
+            {/* {numbers.map((x => <h2 key={x}>{x}</h2>))} */}
 
             {/* Expressions example - wrapped using curly braces {} */}
             <h1>First Page File - {title}</h1>

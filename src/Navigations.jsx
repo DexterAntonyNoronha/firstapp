@@ -4,7 +4,12 @@ export function Navigate() {
             <nav className="navbar navbar-expand-sm navbar-light bg-info text-light mb-5">
                 <div className="container-fluid">
                     <a href="/" className="navbar-brand">React Learning</a>
-                    <a href="/first" className="nav-link active">First Page</a>
+                    <div className="navbar-nav">
+                        <a href="/first" className="nav-link active">First Page</a>
+                    </div>
+                    <div className="navbar-nav">
+                        <a href="/state" className="nav-link active">State Example</a>
+                    </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                         aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ReactFormsExample } from "./ReactFormsExample";
 import { Navigate } from "./Navigations";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { ReactStateBasic } from "./ReactStateBasic";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/reactForms",
     element: <ReactFormsExample />,
+  },
+  {
+    path: "/state",
+    element: <ReactStateBasic></ReactStateBasic>
   },
   {
     path: "/first",
