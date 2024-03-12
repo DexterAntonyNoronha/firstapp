@@ -25,7 +25,7 @@ export function ReactListExample({menuItems, fromChildFunction}) {
 
             {/* <button onClick={fromChildFunction}>Call the parent</button> */}
             <ReactStateExample></ReactStateExample>
-            <hr/>
+            {/* <hr/> */}
 
             {/* <ReactStateBasic/> */}
         </>

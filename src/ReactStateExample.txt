@@ -1,0 +1,35 @@
+import { useState } from "react";
+
+export function ReactStateExample() {
+
+    /* 
+    1. You can create a useState variable. Eg. see below : 
+        const [counter, setCounter] = useState(0);
+    
+    You can create a event handler function using the arrow function like below:
+        const handleClick = () => {
+            console.log("You have clicked the button");
+        }
+
+    You can reassign the value of the counter using the set variable on the useState like below:
+        setCounter(counter * 2);
+
+    Additionally, once the increment and decrement and reset is working fine, create a rule to restrict the increment upto a value 10 and decrement upto a value 0. Create a new useState variable to display a message if the counter value exceeds the boundaries 0 and 10.
+    To render the message : <div className="alert alert-danger">{message}</div>
+    */
+
+    return (
+        <div className="card">
+            <div className="card-header text-center fw-bold ">A Counter Functionality using useState</div>
+            <div className="card-body">
+                <div className="">
+                    <div className="btn btn-primary mb-2">Decrement</div>
+                    <div className="btn btn-primary mb-2 float-end">Increment</div>
+                </div>
+                <div className="alert alert-info text-center fw-bold"> The value of button is: {value}</div>
+                <div className="text-center"><div className="btn btn-danger mb-2 ">Reset Couter</div></div>
+                {/* {(message) && <div className="alert alert-danger">{message}</div>} */}
+            </div>
+        </div>
+    );
+}
