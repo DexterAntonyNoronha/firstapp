@@ -47,12 +47,12 @@ export function ReactFormsMultipleExample() {
     const [details, setDetails] = useState(initialState);
 
     const handleChange = (e) => {
-        const name = e.target.name;
+        const newValue = e.target.name;
         const value = e.target.value;
         setDetails((props) => {
             return {
                 ...props,
-                [name]: value
+                [newValue]: value
             };
         });
     }
