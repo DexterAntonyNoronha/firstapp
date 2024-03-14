@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export function ReactFormsExample() {
 
-    const [name, setName] = useState("");
+    const [userName, setName] = useState("");
     const [email, setEmail] = useState("");
     const [account, setAccount] = useState("");
     const [showNext, setShowNext] = useState(false);
@@ -12,14 +12,14 @@ export function ReactFormsExample() {
             <h4> React Forms Example </h4>
             <form className="input-group " autoComplete="off">
                 <label className="input-group-text"> Employee Name </label>
-                <input className="form-control" type="text" autoComplete="off" value={name} onChange={(evt) => setName(evt.target.value)} name="name" />
+                <input className="form-control" type="text" autoComplete="off" value={userName} onChange={(evt) => setName(evt.target.value)} name="userName" />
                 <label className="input-group-text"> Employee Email </label>
                 <input className="form-control" type="text" value={email} onChange={(evt) => setEmail(evt.target.value)} name="email" />
                 <label className="input-group-text"> Employee Account </label>
                 <input className="form-control" type="text" value={account} onChange={(evt) => setAccount(evt.target.value)} name="account" />
             </form>
             <div className="alert input-group mt-3">
-                {name && <div className="alert alert-info input-group-text">Entered Name is : <span className="fw-bold ">{name}</span></div>}
+                {userName && <div className="alert alert-info input-group-text">Entered Name is : <span className="fw-bold ">{userName}</span></div>}
                 {email && <div className="alert alert-warning input-group-text">Entered Email is : <span className="fw-bold">{email}</span></div>}
                 {account && <div className="alert alert-primary input-group-text">Entered Account is : <span className="fw-bold ">{account}</span></div>}
             </div>
@@ -78,6 +78,7 @@ export function ReactFormsMultipleExample() {
                 <button className="btn btn-info">Submit </button>
                 {/* <div className="btn btn-secondary" onClick={setResetState}>Clear</div> */}
             </form>
+            <div><span>{details.value} {details.value} {details.value}</span> </div>
             {isSubmitted &&
                 <>
                     <h6>Name : {details.name}</h6>

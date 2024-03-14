@@ -8,6 +8,9 @@ export function Navigate() {
                         <a href="/first" className="nav-link active">First Page</a>
                     </div>
                     <div className="navbar-nav">
+                        <a href="/training" className="nav-link active">Training</a>
+                    </div>
+                    <div className="navbar-nav">
                         <a href="/state" className="nav-link active">State Example</a>
                     </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
