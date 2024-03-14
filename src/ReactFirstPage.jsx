@@ -22,7 +22,7 @@ export function FirstPage() {
             {/* {numbers.map((x => <h2 key={x}>{x}</h2>))} */}
 
             {/* Expressions example - wrapped using curly braces {} */}
-            <h1>This is First Page File - {title}</h1>
+            <h1>First Page File - {title}</h1>
 
             {/* Here we are injecting another component to the main page */}
             <ReactListExample menuItems={items} fromChildFunction={fromChild}></ReactListExample>
