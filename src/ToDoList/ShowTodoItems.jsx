@@ -6,8 +6,7 @@ export function ShowToDoItems({ itemInfo, removeToDoItem }) {
                 return (
                     <div className='input-group' key={index}>
                         <div className={
-                            item.priority +
-                            " badge text-light bg-primary mb-1 p-2"
+                            !item.completed ? item.priority + " badge text-light bg-primary mb-1 p-2" : "badge bg-success mb-1 p-2"
                         }
                         >
                             {item.completed ? <strike>{item.todoItem}</strike> : item.todoItem}
