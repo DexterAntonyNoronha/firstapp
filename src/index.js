@@ -9,13 +9,14 @@ import { ReactFormsExample } from "./ReactFormsExample";
 import { Navigate } from "./Navigations";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { ReactStateBasic } from "./ReactStateBasic";
+import { ReactMultiStateExample } from "./DaySix/ReactStates";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
     {
         path: "/training",
-        element: <ReactFormsExample />,
+        element: <ReactMultiStateExample />,
     },
     {
         path: "/",
