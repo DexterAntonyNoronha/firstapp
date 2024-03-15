@@ -10,7 +10,7 @@ import { Navigate } from "./Navigations";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { ReactStateBasic } from "./ReactStateBasic";
 import { ReactMultiStateExample } from "./DaySix/ReactStates";
-import { ToDoList } from "./ToDoList/ToDoList";
+import { ToDoList } from "./ToDoList/AddToDoItem";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
