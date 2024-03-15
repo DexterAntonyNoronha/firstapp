@@ -11,6 +11,9 @@ export function Navigate() {
                         <a href="/training" className="nav-link active">Training</a>
                     </div>
                     <div className="navbar-nav">
+                        <a href="/todoApp" className="nav-link active">To Do List</a>
+                    </div>
+                    <div className="navbar-nav">
                         <a href="/state" className="nav-link active">State Example</a>
                     </div>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"

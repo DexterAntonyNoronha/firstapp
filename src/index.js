@@ -10,6 +10,7 @@ import { Navigate } from "./Navigations";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { ReactStateBasic } from "./ReactStateBasic";
 import { ReactMultiStateExample } from "./DaySix/ReactStates";
+import { ToDoList } from "./ToDoList/ToDoList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     {
         path: "/training",
         element: <ReactMultiStateExample />,
+    },
+    {
+        path: "/toDoApp",
+        element: <ToDoList />,
     },
     {
         path: "/",
