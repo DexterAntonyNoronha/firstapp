@@ -8,9 +8,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ReactFormsExample } from "./ReactFormsExample";
 import { Navigate } from "./Navigations";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { ReactStateBasic } from "./ReactStateBasic";
-import { ReactMultiStateExample } from "./DaySix/ReactStates";
-import { ToDoList } from "./ToDoList/AddToDoItem";
+import { ReactStateBasic } from "./ReactState/ReactStateBasic";
+import { ReactMultiStateExample } from "./DaySix/CommonState.jsx/ReactStates";
+import { ToDoList } from "./DaySix/ToDoList/AddToDoItem";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

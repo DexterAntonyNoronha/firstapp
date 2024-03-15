@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ReactStateExample } from "./ReactStateExample";
+import { ReactStateExample } from "./ReactState/ReactStateExample";
 
 //props
 //props.menuname
@@ -12,7 +12,7 @@ export function ReactListExample({ menuItems, fromChildFunction }) {
         color: "blue"
     }
 
-    
+
 
     const updatedNums = numbers.map((num, index) => {
         return <li className="alert badge me-2 btn btn-secondary " key={num.toString()} onClick={() => setSelected(num)}>{num}</li>;
