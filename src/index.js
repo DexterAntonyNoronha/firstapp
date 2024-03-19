@@ -11,6 +11,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { ReactStateBasic } from "./ReactState/ReactStateBasic";
 import { ReactMultiStateExample } from "./DaySix/CommonState.jsx/ReactStates";
 import { ToDoList } from "./DaySix/ToDoList/AddToDoItem";
+import { ReactReducerExample } from "./StateReducer/ReactReducerExample.jsx/ReactReducerExample";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/state",
-        element: <ReactStateBasic></ReactStateBasic>,
+        element: <ReactReducerExample />,
     },
     {
         path: "/first",

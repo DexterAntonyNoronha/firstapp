@@ -27,7 +27,7 @@ export function ReactMultiStateExample() {
             setMultiValues({
                 score: multiVales.score,
                 multiple: multiVales.multiple,
-                addAndShow: multiVales.addAndShow + 10,
+                addAndShow: multiVales.addAndShow + 20,
             });
         }
     };
@@ -43,11 +43,15 @@ export function ReactMultiStateExample() {
                     >
                         Increment Score
                     </div>
+                    <div className='input-group-text bg-light col-md-2 text-center'>{multiVales.score}</div>
                     <div
                         className='btn btn-sm col-md-2 btn-outline-primary'
                         onClick={handleClick}
                     >
                         Multiply Number
+                    </div>
+                    <div className='input-group-text bg-light col-md-2 text-center'>
+                        {multiVales.multiple}
                     </div>
                     <div
                         className='btn btn-sm col-md-2 btn-outline-primary'
@@ -55,15 +59,8 @@ export function ReactMultiStateExample() {
                     >
                         Add 20 and show Score
                     </div>
-
-                    <div className='input-group'>
-                        <h2 className='input-group-text'>{multiVales.score}</h2>
-                        <h2 className='input-group-text'>
-                            {multiVales.multiple}
-                        </h2>
-                        <h2 className='input-group-text'>
-                            {multiVales.addAndShow}
-                        </h2>
+                    <div className='input-group-text bg-light col-md-2 text-center'>
+                        {multiVales.addAndShow}
                     </div>
                 </div>
             </div>
