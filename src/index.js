@@ -9,6 +9,7 @@ import { ReactFormsExample } from "./ReactFormsExample";
 import { Navigate } from "./Navigations";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { ReactStateBasic } from "./ReactStateBasic";
+import { ReactMultiStateExample } from "./ReactStates/AddToDoItem";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/reactForms",
-        element: <ReactFormsExample />,
+        element: <ReactMultiStateExample />,
     },
     {
         path: "/state",
