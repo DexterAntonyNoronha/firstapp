@@ -26,6 +26,11 @@ export function Navigate() {
                             Use Reducer
                         </a>
                     </div>
+                    <div className='navbar-nav'>
+                        <a href='/calculator' className='nav-link active'>
+                            Calculator
+                        </a>
+                    </div>
                     <button
                         className='navbar-toggler'
                         type='button'

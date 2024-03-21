@@ -11,6 +11,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { ReactStateBasic } from "./ReactStateBasic";
 import { ReactMultiStateExample } from "./ReactStates/AddToDoItem";
 import { ReactReducerExample } from "./Day7/ReactReducerExample";
+import { Calculator } from "./Day7/Tasks/Calculator/Calculator";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
     {
         path: "/useReducerFn",
         element: <ReactReducerExample></ReactReducerExample>,
+    },
+    {
+        path: "/calculator",
+        element: <Calculator />,
     },
 ]);
 
