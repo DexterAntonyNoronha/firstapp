@@ -10,6 +10,7 @@ import { Navigate } from "./Navigations";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { ReactStateBasic } from "./ReactStateBasic";
 import { ReactMultiStateExample } from "./ReactStates/AddToDoItem";
+import { ReactReducerExample } from "./Day7/ReactReducerExample";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
     {
         path: "/first",
         element: <FirstPage></FirstPage>,
+    },
+    {
+        path: "/useReducerFn",
+        element: <ReactReducerExample></ReactReducerExample>,
     },
 ]);
 
