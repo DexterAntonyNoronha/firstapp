@@ -30,15 +30,19 @@ const router = createBrowserRouter([
     },
     {
         path: "/reactForms",
-        element: <ReactFormsExample />,
+        element: <ReactMultiStateExample />,
     },
     {
         path: "/state",
-        element: <ReactReducerExample />,
+        element: <ReactFormsExample />,
     },
     {
         path: "/first",
         element: <FirstPage></FirstPage>,
+    },
+    {
+        path: "/useReducerFn",
+        element: <ReactReducerExample></ReactReducerExample>,
     },
 ]);
 
