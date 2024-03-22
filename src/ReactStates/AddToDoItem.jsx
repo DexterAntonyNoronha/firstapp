@@ -70,7 +70,6 @@ export function ReactMultiStateExample() {
                             className='form-control'
                             type='text'
                             name='itemName'
-                            ref='inputRef'
                             onChange={handleItemName}
                         ></input>
                         <label className='input-group-text'>Priority</label>

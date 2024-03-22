@@ -12,6 +12,7 @@ import { ReactStateBasic } from "./ReactState/ReactStateBasic";
 import { ReactMultiStateExample } from "./DaySix/CommonState.jsx/ReactStates";
 import { ToDoList } from "./DaySix/ToDoList/AddToDoItem";
 import { ReactReducerExample } from "./StateReducer/ReactReducerExample.jsx/ReactReducerExample";
+import { Calculator } from "./Day7/Tasks/Calculator/Calculator";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
     {
         path: "/useReducerFn",
         element: <ReactReducerExample></ReactReducerExample>,
+    },
+    {
+        path: "/calculator",
+        element: <Calculator />,
     },
 ]);
 
