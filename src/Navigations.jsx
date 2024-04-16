@@ -31,6 +31,11 @@ export function Navigate() {
                             Calculator
                         </a>
                     </div>
+                    <div className='navbar-nav'>
+                        <a href='/quiz' className='nav-link active'>
+                            Quiz
+                        </a>
+                    </div>
                     <button
                         className='navbar-toggler'
                         type='button'
