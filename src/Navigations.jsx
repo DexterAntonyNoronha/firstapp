@@ -36,6 +36,16 @@ export function Navigate() {
                             Calculator
                         </a>
                     </div>
+                    <div className='navbar-nav'>
+                        <a href='/ref_effect_hooks' className='nav-link active'>
+                            Ref_Effect_Hooks
+                        </a>
+                    </div>
+                    <div className='navbar-nav'>
+                        <a href='/quiz' className='nav-link active'>
+                            Quiz
+                        </a>
+                    </div>
                     <button
                         className='navbar-toggler'
                         type='button'

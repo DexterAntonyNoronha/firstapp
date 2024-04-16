@@ -13,6 +13,9 @@ import { ReactMultiStateExample } from "./DaySix/CommonState.jsx/ReactStates";
 import { ToDoList } from "./DaySix/ToDoList/AddToDoItem";
 import { ReactReducerExample } from "./StateReducer/ReactReducerExample.jsx/ReactReducerExample";
 import { Calculator } from "./Day7/Tasks/Calculator/Calculator";
+import { ReactUseEffectExample } from "./Day8/ReactUseEffectExample";
+import { QuizMainComponent } from "./Quiz/QuizMainComponnt";
+import { QuizProvider } from "./Quiz/Contexts/Quiz";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -48,6 +51,18 @@ const router = createBrowserRouter([
     {
         path: "/calculator",
         element: <Calculator />,
+    },
+    {
+        path: "/ref_effect_hooks",
+        element: <ReactUseEffectExample></ReactUseEffectExample>,
+    },
+    {
+        path: "/quiz",
+        element: (
+            <QuizProvider>
+                <QuizMainComponent />
+            </QuizProvider>
+        ),
     },
 ]);
 
