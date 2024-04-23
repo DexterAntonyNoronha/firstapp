@@ -1,13 +1,18 @@
 import { AnswerComponent } from "./AnswerComponent";
+import { useContext } from "react";
+import { QuizContext } from "./QuizStates";
 
-export const QuestionComponent = ({ quizQuestion }) => {
-    console.log(quizQuestion);
-    let answers = quizQuestion.incorrect_answers;
+export const QuestionComponent = () => {
+    //console.log(quizQuestion);
+    const [state, dispatch] = useContext(QuizContext);
 
+    let quizQuestion = state.Questions;
+    let answers = quizQuestion[state.currentQuestionIndex].incorrect_answers;
+    let actualQuestion = quizQuestion[state.currentQuestionIndex].question;
     return (
         <>
             <div className='card'>
-                <div className='card-body'>{quizQuestion.question}</div>
+                <div className='card-body'>{actualQuestion}</div>
             </div>
             {/* <AnswerComponent></AnswerComponent>
             <AnswerComponent></AnswerComponent>
@@ -22,7 +27,9 @@ export const QuestionComponent = ({ quizQuestion }) => {
                 );
             })}
             <AnswerComponent
-                quizAnswer={quizQuestion.correct_answer}
+                quizAnswer={
+                    quizQuestion[state.currentQuestionIndex].correct_answer
+                }
             ></AnswerComponent>
         </>
     );

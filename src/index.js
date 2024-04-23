@@ -13,6 +13,7 @@ import { ReactMultiStateExample } from "./ReactStates/AddToDoItem";
 import { ReactReducerExample } from "./Day7/ReactReducerExample";
 import { Calculator } from "./Day7/Tasks/Calculator/Calculator";
 import { QuizComponent } from "./Quiz/QuizComponent";
+import { QuizProvider } from "./Quiz/QuizStates";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -47,7 +48,11 @@ const router = createBrowserRouter([
     },
     {
         path: "/quiz",
-        element: <QuizComponent />,
+        element: (
+            <QuizProvider>
+                <QuizComponent />
+            </QuizProvider>
+        ),
     },
 ]);
 

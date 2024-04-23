@@ -1,3 +1,4 @@
+import { createContext, useReducer } from "react";
 import { Questions } from "../assets/QuizData.js";
 
 export const initialState = {
@@ -19,4 +20,22 @@ export const reducer = (state, action) => {
         default:
             return state;
     }
+};
+
+/*export const QuizContext = createContext();
+
+export const QuizProvider = ({ children }) => {
+    const value = useReducer(reducer, initialState);
+    return (
+        <QuizContext.Provider value={value}>{children}</QuizContext.Provider>
+    );
+};*/
+
+export const QuizContext = createContext();
+
+export const QuizProvider = ({ children }) => {
+    const value = useReducer(reducer, initialState); //value => [state, dispatch]
+    return (
+        <QuizContext.Provider value={value}> {children} </QuizContext.Provider>
+    );
 };

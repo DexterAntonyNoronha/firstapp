@@ -1,12 +1,15 @@
 import { QuestionComponent } from "./QuestionComponent";
 import { Questions } from "../assets/QuizData.js";
 import { useReducer, useState } from "react";
+import { useContext } from "react";
 import { reducer, initialState } from "./QuizStates.js";
+import { QuizContext } from "./QuizStates.js";
 
 export const QuizComponent = () => {
     let quizQuestions = Questions.results;
     //let [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-    const [state, dispatch] = useReducer(reducer, initialState);
+    //const [state, dispatch] = useReducer(reducer, initialState);
+    const [state, dispatch] = useContext(QuizContext);
     return (
         <>
             <div className='container'>
@@ -18,7 +21,7 @@ export const QuizComponent = () => {
                 </div>
                 <div className='card'>
                     <QuestionComponent
-                        quizQuestion={quizQuestions[state.currentQuestionIndex]}
+                    //quizQuestion={quizQuestions[state.currentQuestionIndex]}
                     ></QuestionComponent>
                 </div>
                 <div className='card'>
